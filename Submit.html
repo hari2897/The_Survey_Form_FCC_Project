@@ -1,0 +1,138 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+    <div id="title-box">
+        <h1 id="title">Survey Form</h1>
+        <div id="description-box">
+            <p id="description">
+                Let me get to know you better now
+            </p>
+        </div>
+    </div>
+
+
+    <div id="form-box">
+
+        <form id= "survey-form" method= "post" action= "/action_page_does_not_exist">
+
+
+            <!-- Name -- Email -- Age --  ---->
+
+            <fieldset>
+
+                <legend>Secret Details</legend>
+                <div>
+
+
+                    <label id="name-label" for="name">Name:</label>
+                    <input required id="name" type="text" name="user-name" placeholder="What do people call you?">
+
+
+                </div>
+
+                <div>
+
+                    <label id="email-label" for="email">Email:</label>
+                    <input required id="email" type="email" name="user_email" placeholder="Yentur Yi_Mayil He-yar">
+
+
+                </div>
+
+                <div>
+
+                    <label id="number-label" for="age">Age:</label>
+                    <input required id="number" type="number" name="user_age" placeholder="Yentur Ears" min="1"
+                        max="99">
+
+                </div>
+
+
+
+
+            </fieldset>
+
+
+            <fieldset>
+                <div>
+                    <label for="What are you?">What are you?</label>
+                    <select id="dropdown">
+
+                        <option value="empty">Click to choose</option>
+                        <option value="alien">Alien from Earth</option>
+                        <option value="man">Man from Mars</option>
+                        <option value="idk">I don't know</option>
+                        <option value="wbu">I can't tell you that</option>
+
+                    </select>
+                </div>
+            </fieldset>
+
+
+            <fieldset>
+
+                <label for="Gender">Check minimum one </label>
+                <p>
+                    <input type="checkbox" name="gender" value="male">Not Male<br>
+                    <input type="checkbox" name="gender" value="female">Not female<br>
+                    <input type="checkbox" name="gender" value="new">One of a kind
+                </p>
+            </fieldset>
+
+
+
+            <fieldset>
+
+                    <label for="Gender">Check maximum one </label>
+                    <p>
+                        <input type="radio" name="gender" value="male">God Exists<br>
+                        <input type="radio" name="gender" value="female">God? Nah!<br>
+                        <input type="radio" name="gender" value="new">Aham Brahmasmi
+                    </p>
+                </fieldset>
+    
+
+
+            <fieldset>
+
+
+                <legend>Story Time</legend>
+
+                <div>
+                    <label for="story"></label>
+                    <p>
+                        Take your own spacetime chunk to describe your journey to Mars.
+                    </p>
+
+                    <textarea id="story" name="user_message" rows="4" cols="50"
+                        placeholder="This is your chunk of space by us , you give time.">
+                    </textarea>
+
+                </div>
+
+
+                <div id="submitbutton">
+                    <button type="submit" id="submit">
+                        Launch your Story! Pooof!
+                    </button>
+                </div>
+    </div>
+
+    </fieldset>
+
+    </div>
+
+    </form>
+
+    </div>
+
+</body>
+
+</html>
